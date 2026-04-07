@@ -1,0 +1,29 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.obsidian/workspace.json
+.obsidian/cache/
+
+# Private local data
+vault/40-Ops/
+vault/60-Private/
+vault/**/90-Archive/
+
+# Exports and attachments that often contain private data
+*.xlsx
+*.csv
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.zip
+
+# Secrets
+.env
+*.key
+*.pem
+*password*
+*secret*
+*token*
+
