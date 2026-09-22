@@ -1,21 +1,16 @@
-# Security Policy
+# Security and Privacy Policy
 
-## Sensitive Data
+This repository is a placeholder-only template. A private, filled vault may contain sensitive personal, project, and workflow information and must be treated as a separate risk boundary.
 
-This template is designed to store personal context. If you use it with real data, it may contain sensitive information.
+## Do not commit or publish
 
-Do not commit:
+- passwords, tokens, API keys, cookies, private keys, recovery codes, or secret-bearing configuration
+- personal contacts or identifiers; private calendars, applications, interviews, or third-party messages
+- local paths, server details, infrastructure notes, exports, screenshots, or raw chat records that expose private context
+- a real filled vault, even after a superficial redaction pass
 
-- passwords, tokens, API keys, SSH keys
-- phone numbers, emails, HR contacts, interview links
-- server IPs, domains, deployment credentials
-- private diary, finance, relationship notes
-- raw exports from Feishu, Notion, Google Drive, or other tools
-- local absolute paths that reveal your machine structure
+Before publication, follow `docs/PRIVACY_CHECKLIST.md` and `docs/PUBLICATION_GUIDE.md`. If sensitive material was committed, stop sharing the repository, rotate any exposed credentials, and use an appropriate history-removal process before republishing.
 
-## Before Publishing
+## Scope of this policy
 
-Run a manual review and follow `docs/PRIVACY_CHECKLIST.md`.
-
-If sensitive data was committed, rotate the exposed credentials and remove the data from git history before publishing.
-
+This Markdown template has no runtime application surface, authentication flow, or automated security scanner. The policy documents data-handling boundaries; it does not certify a derivative vault or repository as secure.

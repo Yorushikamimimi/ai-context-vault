@@ -1,159 +1,95 @@
 # AI Context Vault
 
-AI-readable personal context vault template for Obsidian, Codex, Claude Code, and long-running AI workflows.
+A local-first Markdown template for giving AI assistants the **smallest useful amount of context** without turning a personal archive into a public data dump.
 
-> Recommended GitHub description: AI-readable personal context vault template for Obsidian, Codex, Claude Code, and long-running AI workflows.
+It works in Obsidian or any ordinary Markdown folder, and is intended for Codex, Claude Code, ChatGPT, and similar tools that work across more than one session.
 
-## What This Is
+> This repository contains placeholders only. A vault filled with real life, work, account, or project data is **not ready to publish** just because it started from this template.
 
-AI Context Vault is a Markdown-based template that helps AI tools recover your long-term context quickly and safely.
+## What it solves
 
-It is designed for people who use AI assistants across many sessions and want a clean, local-first way to describe:
+Most long-running AI work has two opposite failure modes: every new session starts cold, or an agent reads far more personal material than the task needs. This template makes the boundaries explicit:
 
-- who they are
-- what they are working on
-- what files are source of truth
-- how AI agents should update the archive
-- what must stay private
+- one entry protocol that chooses a minimal recovery path;
+- clear source-of-truth files instead of a single growing chat summary;
+- separate homes for project status, lightweight cross-session task memory, and important weekly history;
+- source-first handoff, so old conversations only supply an unrecorded delta;
+- publication and search boundaries that keep private material out of routine reads.
 
-It provides:
+It is a template and documentation framework, not a note-taking application, secret manager, backup service, or proof that an AI workflow has been tested in production.
 
-- A single AI entry protocol: `vault/AI_CONTEXT.md`
-- A handoff snapshot for future sessions: `vault/SYSTEM_STATUS.md`
-- A profile layer for stable preferences and constraints
-- A project layer for portfolio and engineering work
-- A career layer for applications, interviews, and job fairs
-- A workflow layer for daily logs, sync rules, and reusable prompts
+## Current status
 
-## Current Status
-
-- Stage: public template MVP
-- Data policy: sanitized placeholders only
-- Code: no runtime code, Markdown template repository
-- Main focus: AI context recovery, cross-tool handoff, and privacy-safe publication
-
-## Who It Helps
-
-This template is useful if you:
-
-- use Codex, Claude Code, ChatGPT, or other AI agents across multiple sessions
-- want AI tools to understand your stable preferences without repeating context every time
-- are managing job applications, interviews, projects, and learning notes
-- want a local-first personal operating system based on Markdown
-
-## What It Can Help With
-
-- Resume and interview preparation
-- Project retrospectives and portfolio positioning
-- Daily work summaries
-- Cross-tool AI handoff
-- Personal knowledge organization
-- Reducing repeated context setup in new AI conversations
+- Stage: reusable public template
+- Contents: sanitized placeholders; no real person, organization, account, or operational data
+- Runtime: Markdown only; no automated workflow or privacy scan is claimed
+- Intended use: copy, tailor locally, then keep your filled vault private by default
 
 ## Structure
 
 ```text
 vault/
-  AI_CONTEXT.md                 # agent entry protocol
-  SYSTEM_STATUS.md              # current state and handoff snapshot
-  CLAUDE.md                     # Claude Code entry rule
-  00-Profile/                   # identity, goals, skills, working style
-  10-Knowledge/                 # reusable learning notes
-  20-Projects/                  # project index and retrospectives
-  30-Career/                    # resume, applications, interviews, job fairs
-  50-Workflow/                  # AI usage, sync rules, daily logs, prompts
-  90-Inbox/                     # temporary capture
+  AI_CONTEXT.md                         # minimal-context entry protocol
+  SYSTEM_STATUS.md                      # small current-state index, not a full history
+  AGENTS.md                             # optional Codex agent entry pointer
+  CLAUDE.md                             # optional Claude Code entry rule
+  00-Profile/                           # stable preferences and goals
+  10-Knowledge/                         # reusable learning notes
+  20-Projects/                          # project index; each project owns its own status
+  30-Career/                            # optional career workflow templates
+  50-Workflow/
+    SYNC_RULES.md                       # write-routing and link-update rules
+    conversation-handoff.md             # source-first handoff template
+    task-memory/README.md               # only for tasks lacking another current source
+    logs/weekly-log-template.md         # important dated history, never the current owner
+    prompts/                            # reusable prompts
+  90-Inbox/                             # temporary, unprocessed capture
 docs/
-  PRIVACY_CHECKLIST.md          # before publishing a filled vault
-  PUBLICATION_GUIDE.md          # GitHub release guidance
-  PROJECT_POSITIONING.md        # product positioning and similar tools
+  PRIVACY_CHECKLIST.md                  # sanitize before any publication
+  PUBLICATION_GUIDE.md                  # safe public-release process
+  PROJECT_POSITIONING.md                # scope and positioning
 ```
 
-## What It Is Not
+## Quick start
 
-- It is not a private data backup system.
-- It is not a replacement for Obsidian, Logseq, Notion, or Anytype.
-- It is not safe to publish after filling it with real personal data unless you sanitize it first.
+1. Copy the repository into a private Markdown workspace. If you copy only `vault/`, keep the root `docs/` directory with it for the publication checklist and guide.
+2. Replace only the placeholders you need in `vault/00-Profile/` and the relevant domain folders. Leave unknown fields blank or marked `{{UNKNOWN}}`; do not invent facts for completeness.
+3. Start each AI session with the prompt below. The agent should read the protocol first and then only the specific sources needed for the task.
 
-## Quick Start
+   ```text
+   Read and follow {{VAULT_PATH}}/AI_CONTEXT.md. Use the smallest recovery path that supports this request. Do not search or read private material unless I explicitly name the file or folder.
+   ```
 
-1. Copy the `vault/` directory into your Obsidian workspace.
-2. Fill in `vault/00-Profile/identity.md`, `goals.md`, `skills.md`, and `working-style.md`.
-3. Tell your AI tool:
+4. Before asking an agent to write, review `vault/50-Workflow/SYNC_RULES.md`. It explains where a current fact belongs and when a weekly log is appropriate.
+5. When context must move to a new conversation, use `vault/50-Workflow/conversation-handoff.md`; start from the documented source of truth, not a copied chat transcript.
+
+## The four storage layers
+
+| Need | Canonical home | What it must not become |
+|---|---|---|
+| Stable fact or formal current state | the relevant domain source of truth | a copy of every conversation |
+| Current project progress | that project's `README`, `WORKLOG`, `CURRENT_PROGRESS`, or equivalent | a second generic task note |
+| Cross-session context with no better owner | one file under `50-Workflow/task-memory/` | an archive of chat transcripts |
+| Important dated milestone | `50-Workflow/logs/` | the only current-state record |
+
+## Recommended entry rule
+
+For Codex, Claude Code, or another local agent, point the agent at the protocol rather than reproducing rules in several instruction files. This template includes `vault/AGENTS.md` for Codex-style agents and `vault/CLAUDE.md` for Claude Code; both are deliberately small entry pointers.
 
 ```text
-Please read and follow ./vault/AI_CONTEXT.md before working with this archive.
+Before working in this vault, read and follow {{VAULT_PATH}}/AI_CONTEXT.md.
+Use its context routing and privacy boundaries. Before a meaningful write, read {{VAULT_PATH}}/50-Workflow/SYNC_RULES.md and update only the documented source of truth.
 ```
 
-4. For daily handoff, say:
+## Privacy before publication
 
-```text
-Summarize the current conversation.
-```
+Keep your working vault private. If you want a public example, build a separate sanitized copy and review it line by line. Do not publish a filled vault directly—even if you removed obvious credentials.
 
-Then ask the AI to append the summary to `vault/50-Workflow/daily-log.md`.
+Read [the privacy checklist](docs/PRIVACY_CHECKLIST.md) and [publication guide](docs/PUBLICATION_GUIDE.md) before any public push, release, or share link.
 
-## Common Workflows
+## Scope
 
-### Start A New AI Session
-
-```text
-Please read and follow ./vault/AI_CONTEXT.md before working with this archive.
-```
-
-### Summarize A Conversation
-
-```text
-Summarize the current conversation.
-```
-
-Expected output location:
-
-```text
-vault/50-Workflow/daily-log.md
-```
-
-### Update Career Progress
-
-Use:
-
-```text
-vault/30-Career/10-Applications/application-progress.md
-vault/30-Career/20-Interviews/records.md
-```
-
-### Reuse Web AI Output
-
-Use:
-
-```text
-vault/50-Workflow/prompts/web-conversation-summary-template.md
-```
-
-## Recommended Agent Entry Rule
-
-For Codex or Claude Code, put this in your local agent instructions and adjust the path:
-
-```text
-At the beginning of every new session, first read and follow {{VAULT_PATH}}/AI_CONTEXT.md.
-Follow the read order, directory triggers, behavior constraints, and context recovery rules defined there.
-```
-
-## Privacy Warning
-
-Do not publish your filled vault directly.
-
-Before pushing to GitHub, read:
-
-- `docs/PRIVACY_CHECKLIST.md`
-- `docs/PUBLICATION_GUIDE.md`
-
-## Roadmap
-
-- Add more reusable templates for projects, interviews, and daily reviews
-- Add optional script-based privacy scan
-- Add example filled vault with fake data
-- Add screenshots or diagrams for the vault workflow
+The template includes optional career examples because they demonstrate source-of-truth routing. They are not required: remove or replace folders that do not fit your use case. The core is the protocol, the write-routing rules, and the privacy boundary.
 
 ## License
 
