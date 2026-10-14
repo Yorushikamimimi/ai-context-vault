@@ -4,7 +4,7 @@ A local-first Markdown template for giving AI assistants the **smallest useful a
 
 It works in Obsidian or any ordinary Markdown folder, and is intended for Codex, Claude Code, ChatGPT, and similar tools that work across more than one session.
 
-> This repository contains placeholders only. A vault filled with real life, work, account, or project data is **not ready to publish** just because it started from this template.
+> This repository contains placeholders and clearly labelled fictional examples. A vault filled with real life, work, account, or project data is **not ready to publish** just because it started from this template.
 
 ## What it solves
 
@@ -21,7 +21,7 @@ It is a template and documentation framework, not a note-taking application, sec
 ## Current status
 
 - Stage: reusable public template
-- Contents: sanitized placeholders; no real person, organization, account, or operational data
+- Contents: sanitized placeholders and a fictional recovery example; no real personal, account, or operational data
 - Runtime: Markdown only; no automated workflow or privacy scan is claimed
 - Intended use: copy, tailor locally, then keep your filled vault private by default
 
@@ -49,6 +49,12 @@ docs/
   PUBLICATION_GUIDE.md                  # safe public-release process
   PROJECT_POSITIONING.md                # scope and positioning
 ```
+
+## First recovery example / 第一次恢复上下文
+
+Start with the [fictional beginner example (中文)](examples/first-recovery/README.md). Its filled Markdown files show where current project state and past decisions belong, which files a new conversation should read, and what remains unverified. You do not need to fill a personal profile or read every domain folder.
+
+This example contains no application code, real personal records, or runtime results. Reading it is not evidence that any project has run successfully.
 
 ## Quick start
 
