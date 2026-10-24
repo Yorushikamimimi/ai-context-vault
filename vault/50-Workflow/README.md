@@ -8,7 +8,8 @@ This directory holds collaboration rules and reusable templates. It is not the d
 |---|---|
 | `AI_USAGE.md` | concise guidance for common AI collaboration requests |
 | `SYNC_RULES.md` | decides where meaningful updates belong |
-| `conversation-handoff.md` | source-first migration template |
+| `conversation-handoff.md` | source-first handoff and cross-tool acceptance gates |
+| `prompts/cross-tool-handoff.md` | minimal source, coordinator, and responsibility prompts |
 | `task-memory/` | one lightweight current note only when no other owner exists |
 | `logs/` | important dated history; not a current-state owner |
 | `daily.md` | optional personal daily-review template |

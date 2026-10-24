@@ -27,3 +27,11 @@ The template makes five decisions visible instead of leaving them in an agent's 
 - Project documentation with one current status owner
 - Cross-tool handoff where source documents are stronger than chat history
 - Personal workflow templates that must remain private by default
+
+## Maintenance status — 2026-10-24
+
+The template now includes portable cross-tool acceptance prompts, shared file/section writer ownership, explicit Inbox access, and collaboration guidance for clarification, UI previews, README structure, repository naming, and source-aware reading.
+
+This is a manually curated template update, not a mirror of a filled private vault. It adds no real profile, career or health records, operational logs, attachments, credentials, local paths, or private Git history. The existing English README refresh is retained. Current maintenance state is recorded here rather than in a personal example log.
+
+Validation covers the candidate text files, relative links, placeholder boundaries, and Git diff. Actual target-tool recovery, instruction loading, tool integration, and user acceptance remain unverified. No dependencies, application runtime, or release package are involved. Push and publication require separate authority.

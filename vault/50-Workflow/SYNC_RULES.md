@@ -50,3 +50,11 @@ When moving or retiring a current source:
 - Keep secrets, credentials, private identifiers, raw exports, private chat text, and sensitive third-party information out of public template files.
 - Use placeholders such as `{{PROJECT_NAME}}`, `{{DATE}}`, and `{{UNKNOWN}}` in examples. Do not replace missing evidence with realistic-looking fabricated data.
 - A filled private vault is not a publishable repository. Build and review a separate sanitized copy using the repository-root `docs/PRIVACY_CHECKLIST.md` and `docs/PUBLICATION_GUIDE.md`.
+
+## Shared writing and ownership
+
+The agent that did the work maintains its existing current document and, when justified, its milestone log. A coordinator checks cross-task conflicts rather than rewriting every report.
+
+One writer per responsibility is not sufficient when different responsibilities share a file. Assign one current writer to each shared file or section, including linked cards and indexes. Before transferring that ownership, pause the prior writer, reread the latest content, reconcile pending changes, and update related entries serially. Preserve unrelated edits. Record post-cutoff changes and recheck the affected handoff.
+
+`90-Inbox/` is not an automatic maintenance queue. Read or organize it only after the user explicitly authorizes the necessary subpath. A recurring checklist is not permission to inspect private material.

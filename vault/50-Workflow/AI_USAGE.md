@@ -28,3 +28,11 @@ Then review the proposal against `SYNC_RULES.md` before writing. An ordinary sum
 ## Evidence boundary
 
 State what was verified, inferred, and unknown. A successful file write or static check does not prove an external workflow, deployed service, user acceptance, or privacy-safe publication.
+
+## Clear tasks and adjustable previews
+
+Do a clear, bounded task directly. Clarify only a material ambiguity. For frontend design, show a viewable preview with fictional representative content before production changes, unless the user has approved that direction or explicitly waived preview. Validate the implemented UI against the approved view and required states; compilation alone is insufficient.
+
+## External reading
+
+Keep the original material separate from agent research and user conclusions. Check important, uncertain, or changing claims against appropriate primary sources. Record whether an idea was saved, discussed, adopted, tried, or verified; these are different states. Do not turn a personal reminder into an agent policy or a personality diagnosis without the user's decision.

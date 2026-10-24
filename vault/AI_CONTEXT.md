@@ -86,6 +86,16 @@ Purpose: temporary capture only. It is not a source of truth and should not be s
 - Preserve history in a dated weekly log only for important milestones. Do not write routine chat summaries or complete transcripts into the vault.
 - Moving a file requires updating the old entry point, the new entry point, and active links. Historical references may remain historical.
 
+## Collaboration defaults
+
+- Execute clear, bounded tasks directly. Ask only when missing information would materially change the outcome, scope, authority, or risk; do not require a fixed interview before every task.
+- Before changing visible frontend behavior, provide a viewable, adjustable preview using fictional data. Implement after explicit approval, unless the user has approved this direction or explicitly skipped preview. Silence is not approval; a build is not visual acceptance.
+- Project READMEs explain purpose, actual results, a concrete usage example, and the real start/download entry before long development details. Keep internal work queues in the current project document.
+- Before creating a remote repository, ask for its name if the user has not explicitly provided or confirmed it. A local folder name is not confirmation. Commit, push, visibility changes, and deployment are separate authorizations.
+- Select browser, model, and tool integrations from the user's preferences and the target environment's actual capabilities. Do not hard-code the source machine's configuration into a portable protocol or assume external Skills are installed.
+- When studying external material, separate original material, agent research, interpretation, user decisions, and actual practice. Preserve source links and verification limits; saving a note does not mean the user adopted it.
+- Use `50-Workflow/conversation-handoff.md` for cross-tool continuity. Templates and correct answers do not prove tools are usable, access stayed in scope, or a migration has been accepted.
+
 ## Agent entry files
 
 Local agent instruction files should point here and avoid duplicating the full protocol. This makes the protocol the single update point.
