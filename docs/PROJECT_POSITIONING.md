@@ -6,13 +6,19 @@ AI Context Vault is a local-first Markdown template for giving AI assistants min
 
 ## Core value
 
-The template makes five decisions visible instead of leaving them in an agent's memory:
+The template makes six decisions visible instead of leaving them in an agent's memory:
 
 - what an agent reads first and when it stops;
 - which document owns a current fact;
 - when project status should stay with the project;
 - when a small task-memory note or dated weekly history is justified;
+- how several AI tools share one vault and one rule file without drifting copies;
 - how a private working vault differs from a sanitized public template.
+
+## Two layers
+
+- **Core**: the entry protocol, shared collaboration rules, minimal routing, one owner per fact, source-first handoff, and the privacy boundary. This is all a new user needs.
+- **Advanced (optional)**: `vault/50-Workflow/advanced/` covers multi-tool sharing, weekly summaries, and execution records for heavier use. It can be deleted without breaking the core.
 
 ## What it is not
 
@@ -25,13 +31,13 @@ The template makes five decisions visible instead of leaving them in an agent's 
 
 - Long-running local AI sessions that need a repeatable recovery path
 - Project documentation with one current status owner
-- Cross-tool handoff where source documents are stronger than chat history
+- Several AI tools working on the same vault, where source documents are stronger than any one tool's chat history
 - Personal workflow templates that must remain private by default
 
-## Maintenance status — 2026-10-24
+## Maintenance status — 2026-10-26
 
-The template now includes portable cross-tool acceptance prompts, shared file/section writer ownership, explicit Inbox access, and collaboration guidance for clarification, UI previews, README structure, repository naming, and source-aware reading.
+The template now separates shared collaboration rules into `vault/50-Workflow/COLLABORATION.md`, turns `AGENTS.md` and `CLAUDE.md` into identical thin pointers, adds context-reuse rules to `AI_CONTEXT.md`, and introduces the optional `advanced/` layer (multi-tool sharing, weekly summaries, execution records). The README highlights multi-tool sharing, and a Chinese README (`README.zh-CN.md`) mirrors the English one.
 
-This is a manually curated template update, not a mirror of a filled private vault. It adds no real profile, career or health records, operational logs, attachments, credentials, local paths, or private Git history. The existing English README refresh is retained. Current maintenance state is recorded here rather than in a personal example log.
+This is a manually curated template update, not a mirror of a filled private vault. It adds no real profile, career or health records, operational logs, attachments, credentials, local paths, tool configurations, model names, or private Git history. The 2026-10-24 additions (portable cross-tool acceptance prompts, shared file/section writer ownership, explicit Inbox access, and collaboration guidance) are retained.
 
-Validation covers the candidate text files, relative links, placeholder boundaries, and Git diff. Actual target-tool recovery, instruction loading, tool integration, and user acceptance remain unverified. No dependencies, application runtime, or release package are involved. Push and publication require separate authority.
+Validation covers the changed text files, relative links, placeholder boundaries, a text scan for local paths and personal identifiers, and Git diff. Actual target-tool recovery, instruction loading, tool integration, and user acceptance remain unverified. No dependencies, application runtime, or release package are involved. Push and publication require separate authority.

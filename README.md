@@ -1,5 +1,7 @@
 # AI Context Vault
 
+[中文说明](README.zh-CN.md)
+
 > Give AI the right context—without giving it everything.
 
 AI Context Vault is a **local-first Markdown framework** for long-running work with Codex, Claude Code, ChatGPT, and other AI assistants.
@@ -14,6 +16,7 @@ This repository is a **sanitized public template**. It contains structure, rules
 |---|---|
 | Every new conversation starts cold | The AI begins from one stable entry file |
 | Long chats become the only memory | Current facts live in source-of-truth documents |
+| Switching AI tools means explaining everything again | Several tools read the same vault and share one rule file |
 | Agents read too much personal context | Each request uses the smallest useful reading route |
 | Project status, task notes, and history get mixed | Each kind of information has a separate owner |
 | A private vault is accidentally treated as publishable | Public templates and private working data stay separate |
@@ -65,7 +68,7 @@ Use the smallest recovery path that supports this request.
 Do not search or read private material unless I explicitly name the file or folder.
 ```
 
-Codex can use `vault/AGENTS.md`; Claude Code can use `vault/CLAUDE.md`. Both are intentionally small pointers back to the same protocol.
+Give each tool a thin entry file: `vault/AGENTS.md` for Codex and other tools that read `AGENTS.md`, and `vault/CLAUDE.md` for Claude Code. Both only point to `AI_CONTEXT.md` and `50-Workflow/COLLABORATION.md`, so the rules live in one place.
 
 ### 4. Before allowing writes, review the sync rules
 
@@ -86,6 +89,16 @@ The assistant should not load your entire profile and every past conversation. I
 5. update the project document after meaningful progress.
 
 That same pattern works for learning notes, career tracking, recurring workflows, or any other long-running area.
+
+## One vault, several AI tools
+
+Many people use more than one assistant: a coding agent in the terminal, a desktop app, a web chat. With this template they all work from the same files instead of each keeping its own memory.
+
+- Each tool gets a small entry file that points to the same protocol and the same rule file, `vault/50-Workflow/COLLABORATION.md`.
+- Switching tools is not a migration. The next tool reads the current documents and continues; it does not need the previous chat.
+- Only one tool writes a given file at a time, and it re-reads the file right before writing, so one tool does not overwrite another's progress.
+
+For adding a new tool step by step, and for common pitfalls, see [multi-tool sharing](vault/50-Workflow/advanced/multi-tool-sharing.md). It is optional; the core template works with a single tool.
 
 ## Where information belongs
 
@@ -111,11 +124,13 @@ vault/
 ├── 20-Projects/               # project index and project-owned status
 ├── 30-Career/                 # optional career workflow examples
 ├── 50-Workflow/
+│   ├── COLLABORATION.md       # shared working rules for every AI tool
 │   ├── SYNC_RULES.md          # where durable updates should be written
 │   ├── conversation-handoff.md
 │   ├── task-memory/           # fallback for context with no better owner
 │   ├── logs/                  # dated history, not current state
-│   └── prompts/               # reusable prompts
+│   ├── prompts/               # reusable prompts
+│   └── advanced/              # optional: multi-tool sharing, weekly summaries, execution records
 └── 90-Inbox/                  # temporary, unprocessed capture
 
 docs/
@@ -126,7 +141,7 @@ docs/
 
 You can rename or remove domain folders. The reusable core is:
 
-- one entry protocol;
+- one entry protocol and one shared rule file;
 - minimal context routing;
 - one current owner for each fact;
 - source-first handoff;
