@@ -27,6 +27,13 @@ Choose one route before reading. Start narrow and stop once the requested fields
 
 If a source does not answer one required field, open one additional, explicitly relevant source and reassess. A link, a keyword, or the ability to access a folder is not permission to read it.
 
+### Reusing context in an ongoing session
+
+- Within the same task, keep using what you already read while it is still valid; re-read only sources that changed or that the new request needs.
+- If a source was deleted or moved, or a permission was withdrawn, stop treating the old content as current. An earlier answer cannot restore it.
+- A new conversation, a different AI tool, or a different responsibility starts again from the route above. Another session having read a file does not count.
+- No notification and no new commit do not prove a file is unchanged. Check the current content, including uncommitted edits, before relying on it or writing to it.
+
 ## Search and privacy boundary
 
 - Prefer an exact known path. Before searching, define the smallest allowed file or directory scope and the unanswered question it serves.
@@ -69,6 +76,7 @@ Purpose: resume, applications, interviews, job fairs, and growth notes.
 
 Purpose: the rules for AI collaboration, handoff, and persistence.
 
+- Shared collaboration rules: `COLLABORATION.md`
 - Write routing: `SYNC_RULES.md`
 - Source-first migration: `conversation-handoff.md`
 - Lightweight task memory: `task-memory/README.md`
@@ -86,16 +94,10 @@ Purpose: temporary capture only. It is not a source of truth and should not be s
 - Preserve history in a dated weekly log only for important milestones. Do not write routine chat summaries or complete transcripts into the vault.
 - Moving a file requires updating the old entry point, the new entry point, and active links. Historical references may remain historical.
 
-## Collaboration defaults
+## Collaboration rules
 
-- Execute clear, bounded tasks directly. Ask only when missing information would materially change the outcome, scope, authority, or risk; do not require a fixed interview before every task.
-- Before changing visible frontend behavior, provide a viewable, adjustable preview using fictional data. Implement after explicit approval, unless the user has approved this direction or explicitly skipped preview. Silence is not approval; a build is not visual acceptance.
-- Project READMEs explain purpose, actual results, a concrete usage example, and the real start/download entry before long development details. Keep internal work queues in the current project document.
-- Before creating a remote repository, ask for its name if the user has not explicitly provided or confirmed it. A local folder name is not confirmation. Commit, push, visibility changes, and deployment are separate authorizations.
-- Select browser, model, and tool integrations from the user's preferences and the target environment's actual capabilities. Do not hard-code the source machine's configuration into a portable protocol or assume external Skills are installed.
-- When studying external material, separate original material, agent research, interpretation, user decisions, and actual practice. Preserve source links and verification limits; saving a note does not mean the user adopted it.
-- Use `50-Workflow/conversation-handoff.md` for cross-tool continuity. Templates and correct answers do not prove tools are usable, access stayed in scope, or a migration has been accepted.
+Shared working rules (communication, authorization, evidence, project, and tool defaults) live in `50-Workflow/COLLABORATION.md`. This protocol keeps reading routes, privacy boundaries, and write routing.
 
 ## Agent entry files
 
-Local agent instruction files should point here and avoid duplicating the full protocol. This makes the protocol the single update point.
+Each AI tool's entry file (`AGENTS.md`, `CLAUDE.md`, or another tool's equivalent) only points to this file and `50-Workflow/COLLABORATION.md`, plus any genuinely platform-specific note. Rule text lives in one place, so several tools can share the same vault without drifting copies.

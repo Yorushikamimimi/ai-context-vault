@@ -6,6 +6,7 @@ This directory holds collaboration rules and reusable templates. It is not the d
 
 | File or directory | Purpose |
 |---|---|
+| `COLLABORATION.md` | shared working rules for every AI tool; agent entry files point here |
 | `AI_USAGE.md` | concise guidance for common AI collaboration requests |
 | `SYNC_RULES.md` | decides where meaningful updates belong |
 | `conversation-handoff.md` | source-first handoff and cross-tool acceptance gates |

@@ -1,16 +1,8 @@
-# CLAUDE.md
+# Agent Entry
 
-Treat this directory as an AI Context Vault.
+This directory is an AI Context Vault. Before working here:
 
-## Start a session
+1. Read `AI_CONTEXT.md` completely and follow its smallest suitable route.
+2. Follow `50-Workflow/COLLABORATION.md` for shared working rules.
 
-1. Read `AI_CONTEXT.md`.
-2. Choose the smallest recovery route that supports the user's request.
-3. Read only the exact current sources required by that route.
-
-## Rules
-
-- Before a meaningful write, read `50-Workflow/SYNC_RULES.md` and update the smallest current owner.
-- Prefer documented sources of truth over old chat context; use `50-Workflow/conversation-handoff.md` when moving a task between conversations.
-- Do not search or read private, operational, inbox, export, or credential material without explicit scope from the user.
-- Do not treat a request to summarize a conversation as permission to append a transcript. Persist only confirmed, routed changes when authorized.
+Rules live only in those two files; this pointer adds nothing else. Claude Code loads this file rather than `AGENTS.md`, so keep both pointers aligned.
