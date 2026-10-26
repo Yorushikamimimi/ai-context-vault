@@ -6,6 +6,8 @@ Last updated: `{{YYYY-MM-DD}}`
 
 This protocol helps a human or AI agent recover only the context needed for the current request. It does not authorize reads, writes, commits, sharing, or external actions on its own.
 
+Before working, also read and follow `50-Workflow/COLLABORATION.md`, the shared working rules for every AI tool. This file covers reading routes, privacy boundaries, and write routing.
+
 ## Vault summary
 
 - Owner label: `{{OWNER_LABEL_OR_LEAVE_BLANK}}`
@@ -23,7 +25,7 @@ Choose one route before reading. Start narrow and stop once the requested fields
 | A — self-contained task | translation, a narrow explanation, formatting, or a task whose facts are entirely in the request | this file | `SYSTEM_STATUS.md`, profile, logs, and unrelated folders |
 | B — one domain | one project, knowledge area, career workflow, or workflow rule | this file, then that domain's source of truth | other domain folders; read `SYNC_RULES.md` only before a meaningful write or when asked where to write |
 | C — cross-domain or vault governance | a decision that genuinely depends on current system-wide state | this file, `SYSTEM_STATUS.md`, then the exact sources needed | full-profile recovery, historical logs, and broad directory scans |
-| D — explicit task or project continuation | the user names an existing responsibility, project, or handoff | this file, then the named project's current-status document or the named task-memory file | unrelated logs and old chats unless they fill a documented gap |
+| D — explicit task or project continuation | the user names an existing responsibility, project, or handoff | this file, then the named project's current-status document under `20-Projects/<project>/` (or the project's own repository) or the named task-memory file | unrelated logs and old chats unless they fill a documented gap |
 
 If a source does not answer one required field, open one additional, explicitly relevant source and reassess. A link, a keyword, or the ability to access a folder is not permission to read it.
 

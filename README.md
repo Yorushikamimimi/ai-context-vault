@@ -64,6 +64,7 @@ Replace the placeholders you need in `vault/00-Profile/` and the relevant domain
 
 ```text
 Read and follow {{VAULT_PATH}}/AI_CONTEXT.md.
+Also follow {{VAULT_PATH}}/50-Workflow/COLLABORATION.md.
 Use the smallest recovery path that supports this request.
 Do not search or read private material unless I explicitly name the file or folder.
 ```
