@@ -6,6 +6,8 @@ Use this template when work must continue in a new AI conversation or tool.
 
 Read the current source of truth first. An older conversation supplies only the material that has not yet been captured there. Do not migrate an entire transcript by default.
 
+If several AI tools share this vault as a steady state rather than moving work once, see `advanced/multi-tool-sharing.md`. The acceptance gates below still apply when a tool takes on a responsibility for the first time.
+
 ## Handoff record
 
 - Task or project: `{{TASK_OR_PROJECT}}`

@@ -1,5 +1,11 @@
 # {{WEEK_OF_YYYY-MM-DD}} Important Events
 
+## Weekly summary (optional)
+
+- {{THEME}}: {{ONE_LINE_CHANGE_OR_DECISION}} — see "{{EVENT_NAME}}" below; current entry: `{{CURRENT_OWNER_PATH}}`
+
+Remove this section for short weeks. When used, follow `../advanced/weekly-summary.md`.
+
 ## {{EVENT_NAME}}
 
 - Conclusion: `{{DECISION_OR_STATUS}}`

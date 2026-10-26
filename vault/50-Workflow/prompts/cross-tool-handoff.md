@@ -1,6 +1,6 @@
 # Cross-Tool Handoff Prompts
 
-Fill only necessary fields before use. Unfilled placeholders are not an executed handoff. These prompts grant no permission beyond the user's actual authorization.
+Fill only necessary fields before use. Unfilled placeholders are not an executed handoff. These prompts grant no permission beyond the user's actual authorization. For tools that share the vault long term, read `../advanced/multi-tool-sharing.md` first.
 
 ## Source update request
 
