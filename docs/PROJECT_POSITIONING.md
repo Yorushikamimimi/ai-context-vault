@@ -40,6 +40,8 @@ The GitHub About description now mentions that multiple tools such as Claude Cod
 
 The README now opens with "Try it in 5 minutes": newcomers run the existing fictional `examples/first-recovery/` sample in Codex or Claude Code (a thin `CLAUDE.md` was added next to `AGENTS.md`) and check what the assistant read and whether it kept current decisions, history and unknowns apart. One fresh-session walkthrough followed the expected minimal path on both the current-state question and the history follow-up. This is a single model-run check, not a guarantee for every tool.
 
+First batch sync of generic rules from the maintainer's private vault, rewritten without private paths or tool names: `COLLABORATION.md` gains "Keeping records short" and an explicit sub-agent parameter rule; the project index gains a nickname table; `advanced/` gains `close-out-and-commits.md` and `idea-backlog.md`. A rule that depends on a private checker script was not synced. Validation covers a text scan, relative links and Git diff; actual adoption by any tool is unverified.
+
 ## Maintenance status — 2026-10-26
 
 The template now separates shared collaboration rules into `vault/50-Workflow/COLLABORATION.md`, turns `AGENTS.md` and `CLAUDE.md` into identical thin pointers, adds context-reuse rules to `AI_CONTEXT.md`, and introduces the optional `advanced/` layer (multi-tool sharing, weekly summaries, execution records). The README highlights multi-tool sharing, and a Chinese README (`README.zh-CN.md`) mirrors the English one.
