@@ -1,5 +1,13 @@
 # Project Index
 
+## Nicknames
+
+People rarely use a project's full name in conversation. Map the names you actually say to the project, and note what it is easily confused with. Check this table before guessing.
+
+| You say | Project | Not to be confused with |
+|---|---|---|
+| `{{NICKNAME_1}}` | `{{PROJECT_1}}` | `{{SIMILAR_PROJECT}}` |
+
 ## Active Projects
 
 | Project | Stack | Status | Interview / Portfolio Positioning | Next Action |

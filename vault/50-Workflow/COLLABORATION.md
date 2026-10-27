@@ -28,8 +28,17 @@ Shared working rules for every AI tool that uses this vault. Agent entry files (
 - Before creating a remote repository, ask for its name unless the user has explicitly provided or confirmed it. A local folder name is not confirmation.
 - Git: commit as `{{GIT_NAME}} <{{GIT_EMAIL}}>`, stage only the current task's changes, and use `{{COMMIT_MESSAGE_STYLE}}`. Do not rewrite shared history.
 
+## Keeping records short
+
+- An event or progress entry has at most five points, each at most two lines. Put every limitation in one "Not proven" line.
+- Index rows and table cells hold a conclusion plus a link. Details go to the project or evidence file.
+- When a new rule replaces or overlaps an old one, merge or delete the old one in the same change.
+- Every so often, shorten the longest few places. Shortening moves details and merges repeats; it never deletes a decision change or where its evidence lives.
+
 ## Tools and external material
 
+
 - Select browser, model, and tool integrations from the user's preferences and the current tool's actual capabilities. Do not hard-code one machine's configuration or assume a Skill is installed.
+- Use sub-agents only when the task needs them. When the tool accepts model and effort parameters, pass them explicitly in the call, and say which model, effort, and how many were used. Distinguish "passed" from "verified"; if the platform does not report it, say so instead of guessing.
 - When studying external material, separate original material, agent research, interpretation, user decisions, and actual practice. Preserve source links and verification limits; saving a note does not mean the user adopted it.
 - For cross-tool continuity, use `conversation-handoff.md`. Templates and correct answers do not prove a tool is usable, access stayed in scope, or a handoff has been accepted.
