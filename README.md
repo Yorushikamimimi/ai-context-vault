@@ -42,11 +42,31 @@ The important part is not the folder names. It is the discipline:
 3. **Keep each current fact in one authoritative file.**
 4. **Use chat history as supporting evidence, not as the database.**
 
-## First recovery example / 第一次恢复上下文
+## Try it in 5 minutes
 
-Start with the [fictional beginner example (中文)](examples/first-recovery/README.md). Its filled Markdown files show where current project state and past decisions belong, which files a new conversation should read, and what remains unverified. You do not need to fill a personal profile or read every domain folder.
+Before filling anything personal, watch the idea work on a small fictional project. [`examples/first-recovery/`](examples/first-recovery/README.md) is a ready-made mini vault: one entry protocol, one current project record (an image-sorting tool whose PNG export is not built yet), and one history file of older decisions. The sample text is in Chinese; the prompts below work in English.
 
-This example contains no application code, real personal records, or runtime results. Reading it is not evidence that any project has run successfully.
+1. Clone this repository and open a terminal in `examples/first-recovery/`.
+2. Start your AI tool there (for example `codex` or `claude`). The folder has `AGENTS.md` and `CLAUDE.md`, so either tool finds the protocol by itself.
+3. Paste:
+
+   ```text
+   Read AI_CONTEXT.md in this folder and follow it.
+   Read-only: do not write files, run programs, or open anything outside this folder.
+   I want to continue the image-sorting project. Where did it stop,
+   what should we discuss next, and what is still unverified?
+   ```
+
+**What to look for:**
+
+- It reads `AI_CONTEXT.md` and `20-Projects/image-helper.md`, then stops. It does not open the history file or scan other folders.
+- It says the next topic is how exported files are named and how duplicates are handled.
+- It says the first version supports PNG only. The older multi-format idea is history, not the plan.
+- It says the record claims progress but there is no code or test evidence, so nothing is verified.
+
+Then ask *"Still read-only: why did the project narrow down to PNG?"* Only now should it open `50-Workflow/logs/example-history.md`.
+
+The wording will differ between tools; what matters is what it read and whether it kept current decisions, history and unknowns apart. The sample contains no application code, real personal records or runtime results.
 
 ## Quick start
 

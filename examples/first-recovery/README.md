@@ -7,6 +7,7 @@
 ```text
 first-recovery/
 ├── AGENTS.md                         # 给 Codex 的小入口
+├── CLAUDE.md                         # 给 Claude Code 的小入口（内容同上）
 ├── AI_CONTEXT.md                     # 本样例的读取与写回规则
 ├── 20-Projects/
 │   └── image-helper.md               # 唯一当前进度与下一步
@@ -29,7 +30,7 @@ first-recovery/
 现在停在哪里、下一步先讨论什么、哪些事情还没有验证。
 ```
 
-它应读取 `AI_CONTEXT.md` 和 `20-Projects/image-helper.md`，然后停下来。使用 Codex 的目录入口时，`AGENTS.md` 会先指向协议文件；其他助手也可以直接按提示读协议。
+它应读取 `AI_CONTEXT.md` 和 `20-Projects/image-helper.md`，然后停下来。在本目录启动 Codex 或 Claude Code 时，`AGENTS.md`／`CLAUDE.md` 会先指向协议文件；其他助手也可以直接按提示读协议。
 
 **这次不用读历史文件**：问题问的是当前停点，项目记录已经够用；也不用建立个人画像、填求职资料或扫描全部目录。
 
