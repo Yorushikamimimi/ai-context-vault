@@ -34,6 +34,10 @@ The template makes six decisions visible instead of leaving them in an agent's m
 - Several AI tools working on the same vault, where source documents are stronger than any one tool's chat history
 - Personal workflow templates that must remain private by default
 
+## Maintenance status — 2026-10-27
+
+The GitHub About description now mentions that multiple tools such as Claude Code and Codex share the same context. This is a repository metadata change only; no template files changed. The maintainer keeps a private list of rules that may be synced into this template later; each batch sync gets its own public-release check.
+
 ## Maintenance status — 2026-10-26
 
 The template now separates shared collaboration rules into `vault/50-Workflow/COLLABORATION.md`, turns `AGENTS.md` and `CLAUDE.md` into identical thin pointers, adds context-reuse rules to `AI_CONTEXT.md`, and introduces the optional `advanced/` layer (multi-tool sharing, weekly summaries, execution records). The README highlights multi-tool sharing, and a Chinese README (`README.zh-CN.md`) mirrors the English one.
