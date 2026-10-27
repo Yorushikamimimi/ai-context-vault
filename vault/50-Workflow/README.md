@@ -11,7 +11,7 @@ This directory holds collaboration rules and reusable templates. It is not the d
 | `SYNC_RULES.md` | decides where meaningful updates belong |
 | `conversation-handoff.md` | source-first handoff and cross-tool acceptance gates |
 | `prompts/cross-tool-handoff.md` | minimal source, coordinator, and responsibility prompts |
-| `advanced/` | optional practices: multi-tool sharing, weekly summaries, execution records |
+| `advanced/` | optional practices: multi-tool sharing, weekly summaries, execution records, close-out and commits, idea backlog |
 | `task-memory/` | one lightweight current note only when no other owner exists |
 | `logs/` | important dated history; not a current-state owner |
 | `daily.md` | optional personal daily-review template |
