@@ -38,6 +38,8 @@ The template makes six decisions visible instead of leaving them in an agent's m
 
 The GitHub About description now mentions that multiple tools such as Claude Code and Codex share the same context. This is a repository metadata change only; no template files changed. The maintainer keeps a private list of rules that may be synced into this template later; each batch sync gets its own public-release check.
 
+The README now opens with "Try it in 5 minutes": newcomers run the existing fictional `examples/first-recovery/` sample in Codex or Claude Code (a thin `CLAUDE.md` was added next to `AGENTS.md`) and check what the assistant read and whether it kept current decisions, history and unknowns apart. One fresh-session walkthrough followed the expected minimal path on both the current-state question and the history follow-up. This is a single model-run check, not a guarantee for every tool.
+
 ## Maintenance status — 2026-10-26
 
 The template now separates shared collaboration rules into `vault/50-Workflow/COLLABORATION.md`, turns `AGENTS.md` and `CLAUDE.md` into identical thin pointers, adds context-reuse rules to `AI_CONTEXT.md`, and introduces the optional `advanced/` layer (multi-tool sharing, weekly summaries, execution records). The README highlights multi-tool sharing, and a Chinese README (`README.zh-CN.md`) mirrors the English one.
