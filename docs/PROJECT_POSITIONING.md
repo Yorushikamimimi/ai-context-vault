@@ -34,6 +34,10 @@ The template makes six decisions visible instead of leaving them in an agent's m
 - Several AI tools working on the same vault, where source documents are stronger than any one tool's chat history
 - Personal workflow templates that must remain private by default
 
+## Maintenance status — 2026-11-05
+
+Second batch sync of generic rules from the maintainer's private vault, rewritten without private paths, names, or tool-specific settings. `COLLABORATION.md` gains acceptance-first, converging reviews, and visible filtering under Evidence; a new Verification section on running pop-up tests only at the end; a current-look default for interfaces (details in `AI_USAGE.md`); and two "Keeping records short" rules for entry documents and keeping the rules file lean. `advanced/close-out-and-commits.md` gains a control-layer consistency check that works without any script; `advanced/` gains `daily-report.md` and `private-journal-access.md` (method only, no content). Validation covers a text scan, relative links and Git diff; actual adoption by any tool is unverified.
+
 ## Maintenance status — 2026-10-27
 
 The GitHub About description now mentions that multiple tools such as Claude Code and Codex share the same context. This is a repository metadata change only; no template files changed. The maintainer keeps a private list of rules that may be synced into this template later; each batch sync gets its own public-release check.
