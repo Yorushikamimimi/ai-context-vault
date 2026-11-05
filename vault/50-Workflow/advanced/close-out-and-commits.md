@@ -10,6 +10,7 @@ Use this when long-running conversations edit the vault often and uncommitted ch
 ## What close-out does
 
 - Bring the relevant source-of-truth documents and the resume point up to date, so a new agent can continue from files alone.
+- If the change touched control-layer files (the entry protocol, status page, task indexes, shared rules, agent entry files, ignore files), run a consistency check before committing: links resolve, entry files still point to the same rule file, no rule text is duplicated, and entry documents stayed short. If you keep your own check script, run it; fix errors first and mention warnings in the report.
 - Commit this conversation's own changes in batches by topic. Stage explicit paths or hunks only; if a file also holds another conversation's edits and you are unsure which lines are yours, leave them out and say so.
 - Before pushing, fetch and check for new remote commits. On conflict, stop and report. Never force-push.
 

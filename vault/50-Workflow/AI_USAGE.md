@@ -33,6 +33,8 @@ State what was verified, inferred, and unknown. A successful file write or stati
 
 Do a clear, bounded task directly. Clarify only a material ambiguity. For frontend design, show a viewable preview with fictional representative content before production changes, unless the user has approved that direction or explicitly waived preview. Validate the implemented UI against the approved view and required states; compilation alone is insufficient.
 
+New or redesigned apps and pages should feel like current mainstream products, not static, flat layouts. The preview already shows the motion: transitions between pages and states, progress feedback for loading or scanning, responses to hover and click, and where it helps, a touch of smartness such as suggestions or live counts. Motion serves understanding, not show. Share a playable preview, not only static screenshots. Skip this when the user asks for a simple or static interface.
+
 ## External reading
 
 Keep the original material separate from agent research and user conclusions. Check important, uncertain, or changing claims against appropriate primary sources. Record whether an idea was saved, discussed, adopted, tried, or verified; these are different states. Do not turn a personal reminder into an agent policy or a personality diagnosis without the user's decision.

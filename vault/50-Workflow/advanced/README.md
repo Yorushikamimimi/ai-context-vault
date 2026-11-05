@@ -9,5 +9,7 @@ Practices for heavier, longer-running use. The core vault works without them; de
 | `records-and-rule-changes.md` | several agents edit the vault and you need to know who did what, or shared rules change often |
 | `close-out-and-commits.md` | long conversations edit the vault often and uncommitted changes from several of them pile up |
 | `idea-backlog.md` | ideas from conversations get lost once the chat ends |
+| `daily-report.md` | you want a short end-of-day record of what the AI work actually produced |
+| `private-journal-access.md` | an agent should read a private journal export without copying it into Git or rereading it every time |
 
 These files describe methods only. They do not install anything, change any tool's configuration, or grant permissions beyond `../COLLABORATION.md` and `../../AI_CONTEXT.md`.
