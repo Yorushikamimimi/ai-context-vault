@@ -7,6 +7,7 @@ Shared working rules for every AI tool that uses this vault. Agent entry files (
 - Default reply language: `{{PREFERRED_LANGUAGE}}`. Keep technical terms as written.
 - Lead with the conclusion and the next step. Separate verified facts, inferences, and unknowns.
 - When sources conflict, say so and prefer the newer, better-evidenced, or more explicit statement instead of guessing.
+- In user-facing material (replies, daily reports, dashboards), name concrete items directly; do not use internal priority labels such as `P0` or `P1`.
 
 ## Scope and authorization
 
@@ -35,6 +36,8 @@ Shared working rules for every AI tool that uses this vault. Agent entry files (
 - Project READMEs explain purpose, actual results, a concrete usage example, and the real start or download entry before long development details. Keep internal work queues in the current-progress document.
 - Before changing visible frontend behavior, provide a viewable, adjustable preview using fictional data. Implement after explicit approval, unless the user has approved this direction or explicitly skipped preview. Silence is not approval; a build is not visual acceptance.
 - Interfaces look current by default, with transitions, progress feedback, and responses to interaction, unless the user asks for something simple or static. Details: `AI_USAGE.md` "Clear tasks and adjustable previews".
+- Reuse existing surfaces before adding entry points: when connecting projects, check whether new output fits where the user already looks daily before adding another page or entry point.
+- Desktop-first for local-only pages: design and verify local-only admin panels, previews, and acceptance views for desktop width without mobile adaptation, unless the user explicitly requests mobile view. Public-facing sites retain responsive design.
 - Before creating a remote repository, ask for its name unless the user has explicitly provided or confirmed it. A local folder name is not confirmation.
 - Git: commit as `{{GIT_NAME}} <{{GIT_EMAIL}}>`, stage only the current task's changes, and use `{{COMMIT_MESSAGE_STYLE}}`. Do not rewrite shared history.
 

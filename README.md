@@ -150,7 +150,7 @@ vault/
 │   ├── conversation-handoff.md
 │   ├── task-memory/           # fallback for context with no better owner
 │   ├── logs/                  # dated history, not current state
-│   ├── prompts/               # reusable prompts
+│   ├── prompts/               # reusable prompts: handoff, delegation card, quick capture
 │   └── advanced/              # optional: multi-tool sharing, weekly summaries, records, close-out, idea backlog, daily report, journal access
 └── 90-Inbox/                  # temporary, unprocessed capture
 

@@ -23,6 +23,22 @@ Use this when two or more AI tools (for example a coding agent, a desktop assist
 - Shared Skills or prompts: keep one maintained copy and point each tool to it. Similar names do not mean the same behaviour on every tool.
 - Updating a rule file, delivering a notice, and a tool actually following the rule are three different things. Judge adoption by the tool's later answers and actions.
 
+## Primary and secondary controllers
+
+When you maintain global controllers in two different AI tools:
+
+- Designate one as **Primary controller**: owns major cross-domain trade-offs and vault-wide rule changes.
+- Designate the other as **Secondary controller**: empowered to decide routine daily tasks, standard read/write updates, and close-out duties directly.
+- When switching between controllers: whenever starting a new topic or noticing progress discrepancies, the assistant must re-read the relevant authoritative documents and the latest Git status first. Trust the written documents; never rely on memory from a previous conversation.
+
+## Temporary construction board
+
+When multiple independent projects converge toward a shared dashboard, portal, or milestone:
+
+- Create a temporary integration board under `50-Workflow/` for the duration of construction.
+- Keep it lean: record one line per project covering where it currently stands, its next step, who or what it is waiting on, a link to its own current-progress document, and cross-project handoff status. Full details stay in each project's own documentation.
+- Tear down the temporary board as soon as integration wraps up; do not let it become an unmaintained permanent layer.
+
 ## Pitfalls
 
 - On case-insensitive file systems, a documentation file named like another tool's entry file (for example `claude.md`) may be loaded as instructions. Give documentation files distinct names.

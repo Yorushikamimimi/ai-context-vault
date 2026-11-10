@@ -34,6 +34,10 @@ The template makes six decisions visible instead of leaving them in an agent's m
 - Several AI tools working on the same vault, where source documents are stronger than any one tool's chat history
 - Personal workflow templates that must remain private by default
 
+## Maintenance status — 2026-11-10
+
+Third batch sync of generic workflow rules and prompts from the maintainer's private vault, rewritten without private paths, names, or tool-specific settings. Added `prompts/delegation-task-card.md` (two-sided delegation card for mechanical, static analysis, or research tasks) and `prompts/quick-capture-agent.md` (verbatim staging agent prompt for mobile or web capture). `COLLABORATION.md` gains user-facing naming over priority codes in Communication, reusing existing surfaces before adding entry points, and desktop-first design for local-only pages in Projects and repositories. `advanced/multi-tool-sharing.md` gains guidance on primary and secondary controllers, and temporary construction boards for converging cross-project initiatives. Validation covers a text scan, relative links, and Git diff; actual adoption across all external tools remains unverified.
+
 ## Maintenance status — 2026-11-05
 
 Second batch sync of generic rules from the maintainer's private vault, rewritten without private paths, names, or tool-specific settings. `COLLABORATION.md` gains acceptance-first, converging reviews, and visible filtering under Evidence; a new Verification section on running pop-up tests only at the end; a current-look default for interfaces (details in `AI_USAGE.md`); and two "Keeping records short" rules for entry documents and keeping the rules file lean. `advanced/close-out-and-commits.md` gains a control-layer consistency check that works without any script; `advanced/` gains `daily-report.md` and `private-journal-access.md` (method only, no content). Validation covers a text scan, relative links and Git diff; actual adoption by any tool is unverified.
