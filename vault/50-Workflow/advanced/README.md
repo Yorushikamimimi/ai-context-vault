@@ -7,6 +7,7 @@ Practices for heavier, longer-running use. The core vault works without them; de
 | `multi-tool-sharing.md` | you use more than one AI tool on the same vault |
 | `weekly-summary.md` | weekly logs grow long enough that recovery reads too much |
 | `records-and-rule-changes.md` | several agents edit the vault and you need to know who did what, or shared rules change often |
+| `session-commands.md` | conversations run out of context, move between tools, or you want a one-word status check, handoff, or resume |
 | `close-out-and-commits.md` | long conversations edit the vault often and uncommitted changes from several of them pile up |
 | `idea-backlog.md` | ideas from conversations get lost once the chat ends |
 | `daily-report.md` | you want a short end-of-day record of what the AI work actually produced |

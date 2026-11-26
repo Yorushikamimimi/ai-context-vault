@@ -46,6 +46,16 @@ The task is not considered done if:
 Report incomplete status or obstacles rather than claiming completion.
 ```
 
+## Extra requirements for research tasks
+
+A web model asked to attach the original quote for every item may skip opening pages and invent the quotes. Put these three rules into the front card's [Requirements]:
+
+- **One of three source types per item**: "opened and checked" (the page was actually read), "quoted via" (name the page it came from), or "from memory". Only the first two may carry quoted sentences, copied word for word; "from memory" says "original not retrieved" and still counts as done. Do not make "every item has a quote" a completion condition; that pushes the executor to invent them.
+- **Source links**: give original URLs, never search-result or redirect links. If a page will not open, say so; leave it blank rather than writing a quote.
+- **Quote self-check table**: at the end, list every quoted sentence as: item | first few words | URL | opened / quoted via.
+
+Keep one card to about five or six items and split larger ones; prefer an executor mode that can really browse. On the back card, acceptance means spot-checking a few lines from the table; "from memory" conclusions are phrased as "generally believed" or left out; only mismatched quotes are sent back, by item.
+
 ## Back: controller acceptance card
 
 Keep this block with the main controller or project owner to verify deliverables.

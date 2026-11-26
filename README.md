@@ -151,7 +151,7 @@ vault/
 │   ├── task-memory/           # fallback for context with no better owner
 │   ├── logs/                  # dated history, not current state
 │   ├── prompts/               # reusable prompts: handoff, delegation card, quick capture
-│   └── advanced/              # optional: multi-tool sharing, weekly summaries, records, close-out, idea backlog, daily report, journal access
+│   └── advanced/              # optional: multi-tool sharing, weekly summaries, records, session commands, close-out, idea backlog, daily report, journal access
 └── 90-Inbox/                  # temporary, unprocessed capture
 
 docs/
